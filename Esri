@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>COVID_FINAL</title>
+    
+      
+  <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.15/"></script>
+     
+    <script>
+  require([
+      "esri/Map",
+      "esri/views/SceneView"
+    ], function(Map, SceneView) {
+
+    var map = new Map({
+       
+    });
+
+    var view = new SceneView({
+      container: "viewDiv",
+      map: map,
+      camera: {
+        position: {  // observation point
+          x: -79.80800,
+          y: 38.96100,
+          z: 25000 // altitude in meters
+        },
+        tilt: 55  // perspective in degrees
+      }
+    });
+  });
+  </script>
+      
+      
+      
+      <style>
+      html, body, #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+          
+          
+<style>.embed-container {position: relative; padding-bottom: 138%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, 
+          
+.embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container">
+      
+<iframe width="650" height="900" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="COVID Final" src="//www.arcgis.com/apps/Embed/index.html?webmap=a20d93ea967a46e88bb02f7828616ccf&extent=-180,2.5018,31.428,81.0724&zoom=true&previewImage=false&scale=false&details=true&legendlayers=true&active_panel=legend&disable_scroll=true&theme=light"></iframe></div>
+      
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
